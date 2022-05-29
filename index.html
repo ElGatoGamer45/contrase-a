@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebas</title>
+    <script src="https://kit.fontawesome.com/450da6d904.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <script src="funcionmes.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <h1>Estas intentando acceder a una conexión de internet por medio de un codigo QR?</h1>
+        <h2 style="color: gray;">(escriba la contraseña para poder acceder a la conexión de internet)</h2>
+        <h2 style="color: rgb(255, 0, 0);" id="error" hidden>(La contraseña esta erronea)</h2>
+        <h2 style="color: rgb(0, 255, 0);" id="correct" hidden>(La contraseña es correcta)</h2>
+    <div class="conter">
+    <input type="text" class="fake" id="fake" placeholder="Contraseña"><button onclick="faked()" style="color: green;" id="f">Enviar</button>
+    </div>
+    <script>
+        function faked() {
+    document.getElementById('error').style.display = 'block';
+    document.querySelector('h2').style.display = 'none';
+    }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    background: white;
+    font-family: Fredoka one;
+    /* font-size: 20px; */
+    /* display: flex; */
+    /* flex-flow: column wrap; */
+    /* align-items: center; */
+    /* align-content: center; */
+    text-align: center;
+}
+.conter {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 200px;
+}
+.fake {
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    font-family: Fredoka One;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-right: hidden;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+button{
+    width: 10%;
+    height: 56px;
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: Fredoka One;
+    border: 2px solid black;
+    background: white;
+    border-left: hidden;
+    cursor:pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+    </style>
+</body>
+</html>
